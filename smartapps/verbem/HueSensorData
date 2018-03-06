@@ -1,0 +1,51 @@
+Version 1.17
+  set state.pollSensor in pageBridges before pollSensors is called
+
+Version 1.16 
+  hyperpoll a single sensor 5 times for 5 seconds to get subsequent pushes faster when an event is detected
+
+Version 1.15 
+  added the option of autodefine room type groups that exists on the bridges, device is domoticzOnOff. Added TRACE switch
+
+Version 1.14 
+  made code more efficient in the pollsensor for elevated polling and poll more evenly in a minute 
+
+Version 1.13 
+  Move motion sensor inactive event to runIn 30 seconds handler, to have a more natural motion time
+  
+Version 1.12
+  Clean up of scenecycle, moved it to DTH, now independent of Hue scenecycle
+
+Version 1.11
+  Changed motion detect to always do a active-incative sequence when lastupdated changed on the sensor, motion is not being missed this way
+
+Version 1.10
+  1.10 adjust mac from Hue B smart to comply
+
+Version 1.09
+  Minor fixing and added checking
+
+Version 1.08
+  Check for config = reachable and on to be true and put device offline if either one is not true, online if again reachable or config on again
+
+Version 1.07
+  Checked for Hue Dimmer Switch not Hue Switch Dimmer
+
+Version 1.06
+  Small rewrites and bug fixing
+
+Version 1.05
+  Add immediate poll after motion sensed instead of waiting 1 second
+  increased elevated polling
+  scenecycle checking of the dimmer
+
+Version 1.02
+  Support for elevated polling during selected modes (e.g. Evening, Morning)
+  Support for no polling during selected modes (e.g. Away, Holidays)
+
+Version 1.01
+  Support bridges that have username as an attribute
+  Update DTH to show error when a standalone install has been done (without the smartapp)
+
+Version 1.00
+  Initial Release
